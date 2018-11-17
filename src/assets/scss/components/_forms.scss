@@ -6,7 +6,15 @@
 
    &__field {
       margin-bottom: 1rem;
+
+      &--error {
+         [type="text"], [type="number"], [type="email"],
+         [type="password"], [type="search"], [type="url"], [type="tel"], [type="date"], select, textarea {
+            border-color: $error-color;
+         }
+      }
    }
+
    &__buttons {
       .button + .button {
          margin-left: 0.5rem;
