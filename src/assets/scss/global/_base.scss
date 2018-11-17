@@ -5,7 +5,7 @@ html,
 body{
    font-size: $base-size;
    background: $body-background;
-   font-family: $font-family;
+   font-family: $body-font-family;
    color: $body-color;
    line-height: 1.5;
    -webkit-text-size-adjust: 100%;
@@ -22,4 +22,8 @@ figure{
    img{
       max-width: 100%;
    }
+}
+
+main{
+   margin-bottom: 3rem;
 }

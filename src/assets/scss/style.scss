@@ -1,19 +1,21 @@
 @import '../../../node_modules/normalize.css/normalize.css';
 @import '../fonts/icomoon/style.css';
 @import 'themes/theme-default';
+// @import 'themes/theme-dark';
 @import 'settings';
 @import 'global/base';
 @import 'global/grid';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/typography';
+@import 'components/progress-label';
 
 /**********************************************************************************************************************/
 /* ACCORDION */
 /**********************************************************************************************************************/
 .accordion {
    border: 1px solid $line-color;
-   background: $white;
+   background: $accordion-background;
    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
 
    + .accordion {
@@ -30,20 +32,15 @@
    &__title {
       display: block;
       font-weight: 700;
-      &:before{
+      &:before {
          font-family: 'icomoon';
          content: "\e902";
          margin-right: 0.5rem;
       }
    }
 
-   &__status {
-      background-color: $success-color;
-      padding: 0.3rem 0.5rem 0.25rem;
+   &__progress {
       font-size: 0.8465rem;
-      margin-left: 0.75rem;
-      border-radius: $border-radius;
-      color: $white;
    }
 
    &__content-wrapper {
@@ -74,7 +71,14 @@
    }
 
    &__content-wrapper {
-      padding: $grid-gap/2 0;
       font-size: 0.8465rem;
+      padding: $grid-gap/4 0;
+   }
+
+   &__date,
+   &__description,
+   &__contact-person,
+   &__contact {
+      margin: $grid-gap/4 0;
    }
 }

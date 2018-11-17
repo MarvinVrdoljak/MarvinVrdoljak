@@ -1,42 +1,40 @@
 /**********************************************************************************************************************/
 /* COLORS & VARS FOR THEME */
 /**********************************************************************************************************************/
-@import '../../fonts/Roboto/roboto.scss';
-
-$primary-color: #004893;
-$success-color: #74b52a;
+$primary-color: #ff6600;
+$success-color: #ffea00;
 $error-color: #db3847;
 $light-gray: #f5f5f5;
-$medium-gray: #dfdfdf;
-$dark-gray: #616161;
+$medium-gray: #666666;
+$dark-gray: #222222;
 $black: #111111;
 $white: #ffffff;
 
 $body-font-family: 'Roboto', sans-serif;
 $header-font-family: 'Roboto', sans-serif;
 
-$body-background: $light-gray;
-$body-color: $black;
+$body-background: $black;
+$body-color: $white;
 $border-radius: 4px;
 
 $line-color: $medium-gray;
 
 $input-border: 1px solid #cdd3d9;
-$input-background: $white;
-$input-color: $black;
-$label-color: $black;
+$input-background: $dark-gray;
+$input-color: $white;
+$label-color: $white;
 $last-update-color: mix(white, $black, 50%);
 
 $button-background: $primary-color;
 $button-color: $white;
 $button-border: 1px solid $primary-color;
 $button-hollow-background: transparent;
-$button-hollow-color: mix(white, $black, 50%);
-$button-hollow-border: 1px solid mix(white, $black, 50%);
+$button-hollow-color: $white;
+$button-hollow-border: 1px solid $white;
 
-$link-color: $black;
+$link-color: $white;
 
 $progress-label-background: $success-color;
-$progress-label-color: $white;
+$progress-label-color: $black;
 
-$accordion-background: $white;
+$accordion-background: $dark-gray;
