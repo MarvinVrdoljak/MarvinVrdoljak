@@ -1,11 +1,25 @@
 /**********************************************************************************************************************/
 /* BASE */
 /**********************************************************************************************************************/
+html,
 body{
    font-size: $base-size;
    background: $body-background;
    font-family: $font-family;
+   color: $body-color;
+   line-height: 1.5;
+   -webkit-text-size-adjust: 100%;
+   -webkit-font-smoothing: antialiased;
 }
+
 *, :after, :before {
    box-sizing: border-box;
+}
+
+figure{
+   margin: 0;
+   line-height: 0;
+   img{
+      max-width: 100%;
+   }
 }

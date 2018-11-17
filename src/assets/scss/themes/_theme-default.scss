@@ -14,6 +14,12 @@ $white: #ffffff;
 
 $font-family: 'Roboto', sans-serif;
 
+$body-background: $light-gray;
+$body-color: $black;
+$border-radius: 4px;
+
+$line-color: $medium-gray;
+
 $input-border: 1px solid #cdd3d9;
 $input-background: $white;
 $input-color: $black;
@@ -26,3 +32,5 @@ $button-border: 1px solid $primary-color;
 $button-hollow-background: transparent;
 $button-hollow-color: mix(white, $black, 50%);
 $button-hollow-border: 1px solid mix(white, $black, 50%);
+
+$link-color: $black;

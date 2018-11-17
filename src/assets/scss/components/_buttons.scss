@@ -6,7 +6,7 @@
    border-radius: $border-radius;
    padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
 
-   &__hollow{
+   &--hollow{
       background-color: $button-hollow-background;
       color: $button-hollow-color;
       border: $button-hollow-border

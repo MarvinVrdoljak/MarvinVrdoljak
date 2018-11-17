@@ -39,6 +39,10 @@ var paths = {
     scripts: {
         src: "./config/js.json",
         dest: "./dist/js"
+    },
+    images: {
+        src: "./src/assets/images/**/*",
+        dest: "./dist/images"
     }
 };
 
@@ -93,6 +97,11 @@ function scriptsMinified() {
     );
 }
 
+function images() {
+    return gulp.src(paths.images.src)
+        .pipe(gulp.dest(paths.images.dest));
+}
+
 
 function watch() {
     gulp.watch(paths.styles.src, style)
@@ -105,4 +114,4 @@ function watchjs() {
 
 gulp.task("default", gulp.parallel(watch, watchjs));
 gulp.task("watch", gulp.parallel(watch));
-gulp.task("build", gulp.parallel(styleMinified, scriptsMinified));
+gulp.task("build", gulp.parallel(styleMinified, scriptsMinified, images));
