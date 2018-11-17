@@ -3,17 +3,18 @@
 /**********************************************************************************************************************/
 .grid {
    display: flex;
-
-   .grid {
-      margin-left: -$grid-gap/2;
-      margin-right: -$grid-gap/2;
-   }
+   flex-flow: row wrap;
+   max-width: 75rem;
 }
 
 .cell {
+   padding-left: $grid-gap/2;
+   padding-right: $grid-gap/2;
+   flex: 1 1 0;
+}
+
+.shrink{
    flex: 0 0 auto;
-   margin-left: $grid-gap/2;
-   margin-right: $grid-gap/2;
 }
 
 /**********************************************************************************************************************/

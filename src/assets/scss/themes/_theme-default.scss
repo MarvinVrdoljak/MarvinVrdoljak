@@ -3,11 +3,17 @@
 /**********************************************************************************************************************/
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet';
 
-$primary-color: blue;
-$light-gray: #f7f7f7;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #000000;
+$primary-color: #004893;
+$success-color: #74b52a;
+$error-color: #db3847;
+$light-gray: #f5f5f5;
+$medium-gray: #dfdfdf;
+$dark-gray: #616161;
+$black: #111111;
 $white: #ffffff;
 
 $font-family: 'Roboto', sans-serif;
+
+$input-border: 1px solid #cdd3d9;
+$input-background: $white;
+$input-color: $black;

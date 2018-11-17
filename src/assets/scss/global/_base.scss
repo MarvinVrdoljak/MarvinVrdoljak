@@ -2,6 +2,10 @@
 /* BASE */
 /**********************************************************************************************************************/
 body{
-   background: $white;
+   font-size: $base-size;
+   background: $body-background;
    font-family: $font-family;
+}
+*, :after, :before {
+   box-sizing: border-box;
 }

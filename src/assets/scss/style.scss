@@ -1,8 +1,39 @@
 @import '../../../node_modules/normalize.css/normalize.css';
 
-@import 'settings';
 @import 'themes/theme-default';
+@import 'settings';
 
 @import 'global/base';
+@import 'global/forms';
 @import 'global/grid';
 @import 'global/typography';
+
+/**********************************************************************************************************************/
+/* ACCORDION */
+/**********************************************************************************************************************/
+.accordion {
+   border: 1px solid $medium-gray;
+   background: $white;
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+
+   &--title-wrapper {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+   }
+   &--title, &--status {
+   }
+   &--title {
+      display: block;
+   }
+   &--status {
+      background-color: $success-color;
+      padding: 0.5rem;
+      margin-left: 0.75rem;
+      border-radius: $border-radius;
+      color: $white;
+   }
+   &--content-wrapper{
+      border-top: 1px solid $medium-gray;
+   }
+}
