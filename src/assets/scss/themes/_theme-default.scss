@@ -17,3 +17,12 @@ $font-family: 'Roboto', sans-serif;
 $input-border: 1px solid #cdd3d9;
 $input-background: $white;
 $input-color: $black;
+$label-color: $black;
+$last-update-color: mix(white, $black, 50%);
+
+$button-background: $primary-color;
+$button-color: $white;
+$button-border: 1px solid $primary-color;
+$button-hollow-background: transparent;
+$button-hollow-color: mix(white, $black, 50%);
+$button-hollow-border: 1px solid mix(white, $black, 50%);

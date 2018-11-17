@@ -5,16 +5,19 @@
    display: flex;
    flex-flow: row wrap;
    max-width: 75rem;
+
+   &.align-middle {
+      align-items: center;
+   }
 }
 
 .cell {
    padding-left: $grid-gap/2;
    padding-right: $grid-gap/2;
    flex: 1 1 0;
-}
-
-.shrink{
-   flex: 0 0 auto;
+   &.shrink {
+      flex: 0 0 auto;
+   }
 }
 
 /**********************************************************************************************************************/
@@ -25,7 +28,7 @@
       @for $i from 1 through $grid-columns {
          .#{$breakpoint}-#{$i} {
             flex: 0 0 (100% / $grid-columns * $i);
-            max-width:  100% / $grid-columns * $i;
+            max-width: 100% / $grid-columns * $i;
          }
       }
    }
