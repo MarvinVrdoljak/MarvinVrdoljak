@@ -1,3 +1,4 @@
 [
+ "node_modules/jquery/dist/jquery.js",
   "src/assets/js/main.js"
 ]

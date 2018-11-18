@@ -18,13 +18,21 @@
       cursor: pointer;
    }
 
+   &__title-wrapper.is-active{
+      .accordion__title:before{
+         transform: rotate(180deg);
+      }
+   }
+
    &__title {
       display: block;
       font-weight: 700;
       &:before {
          font-family: 'icomoon';
-         content: "\e902";
+         content: "\e900";
          margin-right: 0.5rem;
+         display: inline-block;
+         transition: transform 0.25s ease-out;
       }
    }
 
