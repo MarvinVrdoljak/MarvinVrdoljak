@@ -1,5 +1,5 @@
 !function ($) {
-    let $accordionTitle = $('.accordion__title-wrapper');
+    var $accordionTitle = $('.accordion__title-wrapper');
 
     $accordionTitle.on('click', function(){
         $(this).toggleClass('is-active');
