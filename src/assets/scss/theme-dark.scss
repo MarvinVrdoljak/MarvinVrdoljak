@@ -23,6 +23,16 @@ $header-font-family: 'Roboto', sans-serif;
 $body-background: $black;
 $body-color: $white;
 $border-radius: 0;
+$base-size: 13px;
+
+$breakpoints: (
+        small: 0px,
+        medium: 768px,
+        large: 1024px
+);
+
+$grid-columns: 12;
+$grid-gap: 26px;
 
 $line-color: $medium-gray;
 
@@ -45,6 +55,23 @@ $progress-label-background: $success-color;
 $progress-label-color: $black;
 
 $accordion-background: $dark-gray;
+
+/**********************************************************************************************************************/
+/* FONT SIZES */
+/**********************************************************************************************************************/
+$font-sizes: (
+        small: (
+                'h1': 1.5rem,
+                'h2': 1rem
+        ),
+        medium: (
+                'h1': 1.75rem,
+                'h2': 1.25rem
+        ),
+        large: (
+                'h1': 2rem
+        )
+);
 
 /**********************************************************************************************************************/
 /* IMPORT ALL FILES */

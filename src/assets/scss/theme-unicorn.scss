@@ -24,6 +24,16 @@ $header-font-family:  'SpicyRice', cursive;
 $body-background: mix(white, #FFCAF2, 50%);
 $body-color: #915fff;
 $border-radius: 12px;
+$base-size: 13px;
+
+$breakpoints: (
+        small: 0px,
+        medium: 768px,
+        large: 1024px
+);
+
+$grid-columns: 12;
+$grid-gap: 26px;
 
 $line-color: $primary-color;
 
@@ -46,6 +56,24 @@ $progress-label-background: $success-color;
 $progress-label-color: $body-color;
 
 $accordion-background: $white;
+
+/**********************************************************************************************************************/
+/* FONT SIZES */
+/**********************************************************************************************************************/
+$font-sizes: (
+        small: (
+                'h1': 1.5rem,
+                'h2': 1rem
+        ),
+        medium: (
+                'h1': 1.75rem,
+                'h2': 1.25rem
+        ),
+        large: (
+                'h1': 2rem
+        )
+);
+
 
 /**********************************************************************************************************************/
 /* IMPORT ALL FILES */
