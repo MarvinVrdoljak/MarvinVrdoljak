@@ -1,3 +1,1 @@
-!function ($) {
-console.log('xxx234');
-}(jQuery);
+console.log('Hello');

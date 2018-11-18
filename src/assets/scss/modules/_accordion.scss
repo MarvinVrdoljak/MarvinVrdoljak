@@ -1,0 +1,38 @@
+/**********************************************************************************************************************/
+/* ACCORDION */
+/**********************************************************************************************************************/
+.accordion {
+   border: 1px solid $line-color;
+   background: $accordion-background;
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+
+   + .accordion {
+      margin-top: $grid-gap;
+   }
+
+   &__title-wrapper {
+      padding: 0 $grid-gap/2;
+      display: flex;
+      align-items: center;
+      height: 2.5rem;
+      cursor: pointer;
+   }
+
+   &__title {
+      display: block;
+      font-weight: 700;
+      &:before {
+         font-family: 'icomoon';
+         content: "\e902";
+         margin-right: 0.5rem;
+      }
+   }
+
+   &__progress {
+      font-size: 0.8465rem;
+   }
+
+   &__content-wrapper {
+      border-top: 1px solid $line-color;
+   }
+}

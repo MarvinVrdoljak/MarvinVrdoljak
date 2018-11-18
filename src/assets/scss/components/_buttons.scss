@@ -5,6 +5,7 @@
    height: 2.125rem;
    border-radius: $border-radius;
    padding: 0.3125rem 0.625rem 0.3125rem 0.625rem;
+   cursor: pointer;
 
    &--hollow{
       background-color: $button-hollow-background;

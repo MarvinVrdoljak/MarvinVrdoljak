@@ -1,0 +1,68 @@
+/**********************************************************************************************************************/
+/* FORMS */
+/**********************************************************************************************************************/
+[type="text"], [type="number"], [type="email"],
+[type="password"], [type="search"], [type="url"], [type="tel"], [type="date"], select, textarea {
+   display: block;
+   width: 100%;
+   border-radius: $border-radius;
+   border: $input-border;
+   padding: 0.3125rem 0.75rem 0.3125rem 0.75rem;
+   line-height: 1.375rem;
+   height: 2.125rem;
+   background-color: $input-background;
+   color: $input-color;
+   box-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.07) inset;
+   -webkit-appearance: none;
+
+   &:focus {
+      outline: none;
+      border-color: $primary-color;
+   }
+}
+
+.form {
+   margin: $grid-gap/2 0;
+
+   &__field {
+      margin-bottom: 1rem;
+      position: relative;
+
+      &--select{
+         .icon{
+            position: absolute;
+            right: 0.5rem;
+            bottom: 0.5rem;
+         }
+      }
+
+      &--error {
+         [type="text"], [type="number"], [type="email"],
+         [type="password"], [type="search"], [type="url"], [type="tel"], [type="date"], select, textarea {
+            border-color: $error-color;
+         }
+      }
+   }
+
+   &__buttons {
+      .button + .button {
+         margin-left: 0.5rem;
+      }
+      @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+         float: right;
+      }
+   }
+
+   &__last-update {
+      display: inline-block;
+      margin: 0.5rem 0;
+      color: $last-update-color;
+   }
+}
+
+label {
+   font-weight: 700;
+   margin-bottom: 0.35rem;
+   display: block;
+   color: $label-color;
+}
